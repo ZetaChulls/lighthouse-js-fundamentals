@@ -1,5 +1,5 @@
-const judgeVegetable = function (vegetables, metric) {
-  let winner = ''
+const judgeVegetable = function(vegetables, metric) {
+  let winner = '';
   let winningMetric = 0;
   for (let i = 0; i < vegetables.length; i++) {
     if (vegetables[i][metric] > winningMetric) {
@@ -8,7 +8,7 @@ const judgeVegetable = function (vegetables, metric) {
     }
   }
   return winner;
-}
+};
 
 const vegetables = [
   {
@@ -26,10 +26,10 @@ const vegetables = [
     redness: 4,
     plumpness: 3
   }
-]
+];
 
-const metric = 'redness'
+const metric = 'redness';
 
-judgeVegetable(vegetables, metric)
+judgeVegetable(vegetables, metric);
 
-console.log(judgeVegetable(vegetables, metric))
+console.log(judgeVegetable(vegetables, metric));

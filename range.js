@@ -1,7 +1,7 @@
-/* Create a function that creates arrays using a start, stop, step parameter. 
+/* Create a function that creates arrays using a start, stop, step parameter.
 Return an empty array if values are filled in incorrectly.
 */
-const range = function (start, end, step) {
+const range = function(start, end, step) {
 //If statements to check correct parameters
   if (start === undefined || end === undefined || step === undefined) {
     return [];
@@ -12,16 +12,16 @@ const range = function (start, end, step) {
   if (step <= 0) {
     return [];
   }
-// Creating the array to return. Value always starts at the assigned value.
+  // Creating the array to return. Value always starts at the assigned value.
   let array = [start];
-  for(let i = 0; array[array.length - 1] < end; i++) {
-// Checking to ensure the end result doesn't not exceed the specified end. 
-    if(array[i] + step > end) {
+  for (let i = 0; array[array.length - 1] < end; i++) {
+    // Checking to ensure the end result doesn't not exceed the specified end.
+    if (array[i] + step > end) {
       break;
     } else {
       array.push(array[i] + step);
     }
-  } 
+  }
   return array;
 };
 

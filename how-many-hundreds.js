@@ -1,7 +1,7 @@
 const howManyHundreds = function(num) {
   let hundreds = Math.floor(num / 100);
   return hundreds;
-}
+};
 
 console.log(howManyHundreds(1000), "=?", 10);
 console.log(howManyHundreds(894), "=?", 8);

@@ -4,12 +4,12 @@ indexOf() and return -1 if the value is not seen in the array. */
 const lastIndexOf = function(array, num) {
 // Sets the initial return value to -1 if the checked values do not match.
   let index = -1;
-  for (let i = 0; i < array.length; i++){
-    if(array[i] === num){
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === num) {
       index = i;
     }
   }
-  return index; 
+  return index;
 };
 
 console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
